@@ -1,6 +1,8 @@
 # Writing better skills with text variations
 
-Skills may appear boring if they use the same utterances over and over again. Some solutions have been described in the past to bring variation into responses. This text is intended to share my approach with you.
+Skills may appear boring if they use the same utterances over and over again. Quite a number of solutions have been described in the past to bring variation into responses. 
+
+The following text is intended to share my approach with you.
 
 ## Say hello to "unwrap()"
 
@@ -27,7 +29,7 @@ See the following examples to get an idea for what you can do with "**unwrap**".
 
 1. Randomly choose between one of two given options:
 
-        let randomSpeech = unwrap("{Hello|Hi");
+        let randomSpeech = unwrap("{Hello|Hi}");
 
 2. You are not limited to two variants:
 
@@ -41,7 +43,7 @@ See the following examples to get an idea for what you can do with "**unwrap**".
 
         let randomSpeech = unwrap("{Hello|Hi} {|my friend}");
 
-5. To make things more interesting expressions can be nested:
+5. To make things more interesting expressions can be nested multiple times:
 
         let randomSpeech = unwrap("{Hello|Hi} {|my {|best} friend }");
     
@@ -49,13 +51,12 @@ See the following examples to get an idea for what you can do with "**unwrap**".
 
 6. Homework: Can you count how many different possible utterances are descibed within the following expression?
 
-        let randomSpeech = unwrap("{{|I am{|so}} sorry {|about { that|this}}!  {Something went {|totally} wrong|this did not work{|as expected}}");
+        let randomErrorResponseSpeech = unwrap("{{|I am{|so}} sorry {|about { that|this}}!  {Something went {|totally} wrong|this did not work{|as expected}}");
     
     
 
 ## Summary
 
 Using this technique you have a very compact notation to define a lot of variations for your responses as a one liner.
-
 
  
