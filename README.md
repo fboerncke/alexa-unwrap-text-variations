@@ -1,4 +1,4 @@
-# Writing better skills with text variations
+# Writing better Alexa skills with text variations
 
 Skills may appear boring if they use the same utterances over and over again. Quite a number of solutions have been described in the past to bring variation into responses. 
 
@@ -21,7 +21,7 @@ This is a piece of code I use in almost every skill I write:
 
 ## What does it do?
 
-The function "**unwrap**" randomly "unwraps" text variations defined in curly braces and separated by "|". 
+The function "**unwrap**" randomly "unwraps" text variations defined within curly braces ("{}") separated by "|" characters. 
 
 ## How to use it?
 
@@ -57,6 +57,6 @@ See the following examples to get an idea for what you can do with "**unwrap**".
 
 ## Summary
 
-Using this technique you have a very compact notation to define a lot of variations for your responses as a one liner.
+Using this technique you have a very compact notation to define a lot of variations for your responses as a one liner in your code.
 
  
